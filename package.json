@@ -1,0 +1,24 @@
+{
+  "name": "cheap-drugs",
+  "version": "1.0.0",
+  "description": "## Value Add Proposal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rural-jurors/cheap-drugs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rural-jurors/cheap-drugs/issues"
+  },
+  "homepage": "https://github.com/rural-jurors/cheap-drugs#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
