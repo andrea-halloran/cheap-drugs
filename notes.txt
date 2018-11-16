@@ -1,0 +1,7 @@
+cookie parser
+session manager
+(pruning)
+
+http anonymous routes
+
+redirect non authorized middleware
