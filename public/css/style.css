@@ -68,3 +68,11 @@ h1 {
   padding-left: 30px;
   padding-top: 30px;
 }
+
+.searchEntry {
+  border: darkblue 3px solid;
+}
+
+.bannerBorder {
+  border-bottom: black  5px solid;
+}
