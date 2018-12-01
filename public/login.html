@@ -13,6 +13,9 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+    <script src="../authentication.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -40,25 +43,14 @@
                 </div>
                 <br />
                 <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input placeholder="Username" id="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input placeholder="Password" id="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Log in
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </form>
+                    <div>
+                        <button class="btn waves-effect waves-light" id="btn-login">Log in
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <button class="btn waves-effect waves-light" id="btn-logout">Log out
+                            <i class="material-icons left">send</i>
+                        </button>
+                    </div>
                 </div>
                 <div class="parallax">
                     <img src="assets/pills.jpg" alt="Unsplashed background img 1" id="pillBackground" />
@@ -67,48 +59,48 @@
         </div>
     </div>
 
-            <footer class="page-footer teal">
-                <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text">Company Bio</h5>
-                            <p class="grey-text text-lighten-4">
-                                We're a group of students from the Coding Bootcamp at UT. This site is NOT live at the moment, however the resources used
-                                are real. We would love to help in any way possible with anything related to this site.
-                            </p>
-                        </div>
-                        <div class="col l3 s12">
-                            <h5 class="white-text">Settings</h5>
-                            <ul>
-                                <li><a class="white-text" href="#!">Link 1</a></li>
-                                <li><a class="white-text" href="#!">Link 2</a></li>
-                                <li><a class="white-text" href="#!">Link 3</a></li>
-                                <li><a class="white-text" href="#!">Link 4</a></li>
-                            </ul>
-                        </div>
-                        <div class="col l3 s12">
-                            <h5 class="white-text">Connect</h5>
-                            <ul>
-                                <li><a class="white-text" href="#!">Link 1</a></li>
-                                <li><a class="white-text" href="#!">Link 2</a></li>
-                                <li><a class="white-text" href="#!">Link 3</a></li>
-                                <li><a class="white-text" href="#!">Link 4</a></li>
-                            </ul>
-                        </div>
-                    </div>
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">
+                        We're a group of students from the Coding Bootcamp at UT. This site is NOT live at the moment, however the resources used
+                        are real. We would love to help in any way possible with anything related to this site.
+                    </p>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        Made by
-                        <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-                    </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
                 </div>
-            </footer>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by
+                <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
 
-            <!-- Scripts -->
-            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="js/materialize.js"></script>
-            <script src="js/init.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 </body>
 
 </html>
